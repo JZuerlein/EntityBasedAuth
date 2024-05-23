@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityBasedAuth.Domain", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiyBasedAuth.Test", "EntitiyBasedAuth.Test\EntitiyBasedAuth.Test.csproj", "{C6A0B0A1-C471-4F15-9F23-1C2BAEA4C7B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityBasedAuth.Authorization", "..\EntityBasedAuth.Authorization\EntityBasedAuth.Authorization.csproj", "{656C8CFF-83EB-48B6-8755-F613CC020C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityBasedAuth.Authorization", "EntityBasedAuth.Authorization\EntityBasedAuth.Authorization.csproj", "{5C224650-88A7-4BE8-A3B8-99B9D17302D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityBasedAuth.MVC", "..\EntityBasedAuth.MVC\EntityBasedAuth.MVC.csproj", "{ED33A4F5-03D1-4921-8900-CF501F1AB4F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityBasedAuth.MVC", "EntityBasedAuth.MVC\EntityBasedAuth.MVC.csproj", "{AE38BBCB-49D8-4712-8297-928E154D3848}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{C6A0B0A1-C471-4F15-9F23-1C2BAEA4C7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6A0B0A1-C471-4F15-9F23-1C2BAEA4C7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6A0B0A1-C471-4F15-9F23-1C2BAEA4C7B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{656C8CFF-83EB-48B6-8755-F613CC020C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{656C8CFF-83EB-48B6-8755-F613CC020C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{656C8CFF-83EB-48B6-8755-F613CC020C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{656C8CFF-83EB-48B6-8755-F613CC020C3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED33A4F5-03D1-4921-8900-CF501F1AB4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED33A4F5-03D1-4921-8900-CF501F1AB4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED33A4F5-03D1-4921-8900-CF501F1AB4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED33A4F5-03D1-4921-8900-CF501F1AB4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C224650-88A7-4BE8-A3B8-99B9D17302D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C224650-88A7-4BE8-A3B8-99B9D17302D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C224650-88A7-4BE8-A3B8-99B9D17302D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C224650-88A7-4BE8-A3B8-99B9D17302D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE38BBCB-49D8-4712-8297-928E154D3848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE38BBCB-49D8-4712-8297-928E154D3848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE38BBCB-49D8-4712-8297-928E154D3848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE38BBCB-49D8-4712-8297-928E154D3848}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

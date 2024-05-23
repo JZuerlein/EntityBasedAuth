@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\EntityBasedAuth.Authorization\EntityBasedAuth.Authorization.csproj" />
+    <ProjectReference Include="..\EntityBasedAuth.Authorization\EntityBasedAuth.Authorization.csproj" />
     <ProjectReference Include="..\EntityBasedAuth.Domain\EntityBasedAuth.Domain.csproj" />
   </ItemGroup>
 

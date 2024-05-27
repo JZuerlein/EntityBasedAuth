@@ -40,7 +40,7 @@ else
     <h3>Employee Reviews:</h3>
     @foreach (var review in Model)
     {
-        if ((await AuthorizationService.AuthorizeAsync(User, review, EmployeeReviewPolicies.UserCanViewPolicyName)).Succeeded)
+        if ((await AuthorizationService.AuthorizeAsync(User, review, EmployeeReviewPolicies.ReadReviewPolicyName)).Succeeded)
         {
             <a asp-controller="Home" asp-action="UnderDev" class="btn btn-primary">@review.EmployeeName</a>
         }

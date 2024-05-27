@@ -16,13 +16,9 @@ namespace EntityBasedAuth.Auth.Policies
         public const string ReadReviewPolicyName = "ReadReview";
         public static AuthorizationPolicy GetReadReviewPolicy()
         {
-            var builder = new AuthorizationPolicyBuilder();
-            builder.AddRequirements(new IAuthorizationRequirement[] {
-                new UserCanViewReviewRequirement()
-            });
-
-            builder.RequireAuthenticatedUser();
-            return builder.Build();
+            return new AuthorizationPolicyBuilder()
+                .AddRequirements(new UserCanViewReviewRequirement())
+                .Build();
         }
 
         public const string SubmitReviewPolicyName = "SubmitReview";

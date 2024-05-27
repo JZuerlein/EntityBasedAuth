@@ -18,12 +18,15 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy(EmployeeReviewPolicies.UserCanViewPolicyName,
-                      EmployeeReviewPolicies.GetUserCanViewPolicy());
+    options.AddPolicy(EmployeeReviewPolicies.ReadReviewPolicyName,
+                      EmployeeReviewPolicies.GetReadReviewPolicy());
 });
 
 builder.Services.AddSingleton<IAuthorizationRequirement,
                               UserCanViewReviewRequirement>();
+builder.Services.AddSingleton<IAuthorizationHandler, UserIsCreatorOfReviewHandler<UserCanViewReviewRequirement>>();
+builder.Services.AddSingleton<IAuthorizationHandler, UserIsSubjectOfReviewHandler<UserCanViewReviewRequirement>>();
+builder.Services.AddSingleton<IAuthorizationHandler, UserIsInHumanResourcesHandler>();
 
 var app = builder.Build();
 
